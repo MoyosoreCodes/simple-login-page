@@ -1,0 +1,10 @@
+extends layout 
+
+block layout-content
+    .login-form
+        h1 Sign IN
+        form(action="auth", method="post")
+            input(type="text" name ="username" placeholder="Username" required)
+            input(type="password" name="password" placeholder = "Password")
+            input(type="submit", value="Submit")
+        a(href="/addUser" ) Sign Up

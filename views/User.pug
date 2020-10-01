@@ -1,0 +1,12 @@
+
+extends layout
+
+block layout-content
+    .View.UserView
+        h1.Banner Howdy,  #{username}!
+        .Message Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita quis,
+            .Title
+        .NavButtons
+            form(action="logout", method= "post")
+                    .NavButton 
+                        input(type="submit", value="logout")
